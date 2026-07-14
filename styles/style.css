@@ -1,5 +1,170 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: 400;
+
+  /* background-image: var(--background-image); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-color: var(--dark-black); */
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
+
+.header {
+  height: 100vh;
+  min-height: 668px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  margin: 10px 10px 40px;
+  /* margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px; */
+  position: relative;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  padding-top: 75px;
+  margin-bottom: 65px;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 11px;
+}
+
+.header__theme-menu-button {
+  padding: 4px 13px;
+  border: 1px solid transparent;
+  background-color: inherit;
+  color: var(--dark-pink);
+  text-transform: lowercase;
+  line-height: 1;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.header__theme-menu-button_active {
+   border: 1px solid var(--dark-pink)
+}
+
+.header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+  border: 1px solid rgb(255, 0, 112, 40%);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--dark-pink);
+}
+
+.decoration-pic {
+position: absolute;
+display: flex;
+justify-self: end;
+gap: 10px;
+color: var(--dark-pink);
+right: 9px;
+line-height: 25px;
+}
+
+.decoration-pic::before {
+  content: 'REC';
+}
+
+.decoration-pic::after {
+  content: "";
+  align-self: center;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 100%;
+  background-color: var(--dark-pink);
+  box-shadow: 0 0 4px 2px var(--dark-pink);
+}
+
+.decorated-zone {
+
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  border-top: 1px solid var(--dark-pink);
+  border-right: 1px solid var(--dark-pink);
+  width: 25px;
+  height: 25px;
+  top: 0;
+  right: 0;
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid var(--dark-pink);
+  border-left: 1px solid var(--dark-pink);
+  width: 25px;
+  height: 25px;
+  bottom: 0;
+  left: 0;
+}
+
+.header-title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--heading-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-weight: 800;
+  line-height: 82.5%;
+  margin-bottom: 55px;
+}
+
+.header-div {
+  max-height: fit-content;
+}
+
+.header-text {
+  font-weight: 800;
+  line-height: 23.4px;
+  color: var(--dark-black);
+}
+
+.title-decor {
+  background-color: var(--dark-pink);
+}
+
+.main {
+  margin: 10px 10px 0px;
+}
+
+.section__title {
+  font-size: 18px;
+  color: var(--dark-pink);
+  margin-bottom: 20px;
+  font-weight: 800;
+  line-height: 23.4px;
+}
+
+.section__answers-title {
+  font-size: 18px;
+  color: var(--dark-black);
+  margin-bottom: 10px;
+}
+
+.section__answers-text {
+  font-size: 18px;
+  color: var(--dark-white);
+  line-height: 23.4px;
+}
+
+.section__link {
+  text-shadow: 2px 2px 0 var(--accent-color);;
+}
+
+
