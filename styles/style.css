@@ -4,13 +4,12 @@
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-weight: 400;
-
-  /* background-image: var(--background-image); */
+  background-image: var(--background-image);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* background-color: var(--dark-black); */
+  background-color: var(--dark-black);
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
@@ -20,23 +19,19 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
-  margin: 10px 10px 40px;
-  /* margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px; */
+  margin: 10px 10px 30px;
   position: relative;
 }
 
 .header__theme-menu {
   justify-self: end;
-  padding-top: 75px;
-  margin-bottom: 65px;
+  padding-top: 62px;
+  margin-bottom: 67px;
 }
 
 .header__theme-menu-list {
   display: grid;
-  gap: 11px;
+  gap: 9px;
 }
 
 .header__theme-menu-button {
@@ -90,10 +85,6 @@ line-height: 25px;
   box-shadow: 0 0 4px 2px var(--dark-pink);
 }
 
-.decorated-zone {
-
-}
-
 .decorated-zone::before {
   content: '';
   position: absolute;
@@ -112,7 +103,7 @@ line-height: 25px;
   border-left: 1px solid var(--dark-pink);
   width: 25px;
   height: 25px;
-  bottom: 0;
+  bottom: 20px;
   left: 0;
 }
 
@@ -143,6 +134,11 @@ line-height: 25px;
   margin: 10px 10px 0px;
 }
 
+.section {
+  margin-bottom: 49px;
+}
+
+
 .section__title {
   font-size: 18px;
   color: var(--dark-pink);
@@ -151,10 +147,22 @@ line-height: 25px;
   line-height: 23.4px;
 }
 
+.section__answers {
+  margin-bottom: 20px;
+}
+
 .section__answers-title {
   font-size: 18px;
   color: var(--dark-black);
   margin-bottom: 10px;
+}
+
+.unic-title-margin {
+  margin-bottom: 20px;
+}
+
+.unic-title-bold {
+  font-weight: 400;
 }
 
 .section__answers-text {
@@ -165,6 +173,40 @@ line-height: 25px;
 
 .section__link {
   text-shadow: 2px 2px 0 var(--accent-color);;
+}
+
+.section__pictures {
+  margin-bottom: 50px;
+}
+
+.gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.section__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.footer {
+  position: relative;
+  height: 100vh;
+  min-height: 668px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.footer__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--heading-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-weight: 800;
+  line-height: 82.5%;
 }
 
 
