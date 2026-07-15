@@ -6,8 +6,10 @@
   --font-family: "IBM Plex Mono", "Arial", sans-serif;
   --font-size: 18px;
   --background-image: url(../images/cover-image-dark.png);
-  --dark-pink: #FF0070;
-  --dark-black: #000028;
-  --dark-white: #F1B2CE;
-  
+  --pink: #FF0070;
+  --black: #000028;
+  --white: #F1B2CE;
+  --heading-color: #DB00FF;
+  --accent-color: var(--pink);
+  --gap: 10px;
 }
