@@ -136,7 +136,7 @@ line-height: 1.39;
 }
 
 .section {
-  margin-bottom: 51px;
+  margin-bottom: 49px;
 }
 
 
@@ -200,7 +200,7 @@ line-height: 1.39;
 
 .section__image {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -289,11 +289,61 @@ line-height: 1.39;
 
   .what-grid-column {
     grid-column: 1;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
+  }
+
+  .what-grid-column:last-child {
+    margin-bottom: 0px;
   }
 
   .title-what {
     width: 30%;
   }
 
+  .section-how {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .unic-title-margin {
+    margin: 0;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+
+  .section-how-column .section__answers:not(:last-of-type) {
+  margin-bottom: 20px;
+  }
+
+  .gallery {
+    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+
+  .gallery li:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .gallery li:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1 / 3;
+  }
+
+  .gallery li:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2 /4;
+  }
+
+  .gallery li:nth-child(5) {
+    grid-column: 2 / 4;
+    grid-row: 3;
+  }
+
+  .section__pictures {
+    margin-bottom: 60px;
+  }
 }
