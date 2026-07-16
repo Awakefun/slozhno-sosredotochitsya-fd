@@ -15,14 +15,11 @@
   --accent-color: #FF8DCB;
   --black: #353430;
   --white: #353430;
+  --background-image: url(../images/cover-image-light.png);
 }
 
 .theme-light .decoration-pic {
   display: none;
-}
-
-.theme-light .page {
-  background-image: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -33,13 +30,10 @@
     --accent-color: #FF8DCB;
     --black: #353430;
     --white: #353430;
+    --background-image: url(../images/cover-image-light.png);
   }
 
   .decoration-pic {
     display: none;
-  }
-
-  .page {
-  background-image: none;
   }
 }

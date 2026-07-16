@@ -15,12 +15,9 @@
   --bg-color: #000028;
   --heading-color: #DB00FF;
   --accent-color: var(--pink);
+  --background-image: url(../images/cover-image-dark.png);
 }
 
 .theme-dark .decoration-pic {
   display: flex;
-}
-
-.theme-dark .page {
-  background-image: var(--background-image);;
 }
