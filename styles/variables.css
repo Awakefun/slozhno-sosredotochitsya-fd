@@ -6,12 +6,12 @@
   --font-family: "IBM Plex Mono", "Arial", sans-serif;
   --font-size: 18px;
   --background-image: url(../images/cover-image-dark.png);
-  --pink: #FF0070;
-  --black: #000028;
-  --white: #F1B2CE;
+  --title-bg-color: #FF0070;
+  --title-color: #000028;
+  --text-color: #F1B2CE;
   --bg-color: #000028;
-  --fill: #FFF1F7;
+  --button-hover-color: rgb(255, 0, 112, 40%);
   --heading-color: #DB00FF;
-  --accent-color: var(--pink);
+  --accent-color: var(--title-bg-color);
   --gap: 10px;
 }
